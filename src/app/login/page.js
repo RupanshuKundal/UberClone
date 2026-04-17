@@ -11,6 +11,13 @@ const Page = () => {
         <label className="pas" htmlFor="pas"><h4>Enter the password</h4></label>
         <input id="pas" type="password" placeholder="Password" />
         <button className='btn'>Submit</button>
+        <div style={{ display: 'flex', gap: '10px' }}>
+          <button className="btn" style={{ backgroundColor: "#fcfcfc", color: "black" }}>
+            User
+          </button>
+          <button className="btn" style={{ backgroundColor: "#fcfcfc", color: "black" }}>Employee</button>
+        </div>
+
       </form>
     </div>
   );
