@@ -23,6 +23,9 @@ const page = () => {
         password
       })
     })
+    form.reset()
+    alert("User Registered Successfully")
+    
 
 
 
