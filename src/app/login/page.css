@@ -3,22 +3,21 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin: 100px auto 40px auto; 
+  margin: 100px auto 40px auto;
   min-height: 72vh;
   width: 50%;
   background-color: #fcfcfc;
-  border: 2px solid #fef3c7;
+  border: 2px solid #f3e8ff;
   border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 24px rgba(88, 28, 135, 0.18);
   padding: 50px;
-  
 }
 
 .heading h1 {
-  color: #78350f;
+  color: #581c87;
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 40px; 
+  margin-bottom: 40px;
   text-align: center;
 }
 
@@ -31,15 +30,14 @@ form {
 }
 
 label {
-  color: #78350f;
+  color: #6b21a8;
   font-size: 0.95rem;
   font-weight: 600;
 }
-
 input {
   width: 100%;
-  background-color: #fffbeb;
-  border: 2px solid #fde68a;
+  background-color: #fdf4ff;
+  border: 2px solid #e9d5ff;
   border-radius: 12px;
   padding: 14px;
   font-size: 15px;
@@ -48,13 +46,13 @@ input {
 }
 
 input:focus {
-  border-color: #f59e0b;
-  box-shadow: 0 0 0 2px #fde68a;
+  border-color: #a855f7;
+  box-shadow: 0 0 0 2px #f5d0fe;
 }
 
 button.btn {
   width: 100%;
-  background-color: #d97706;
+  background-color: #9333ea;
   color: #ffffff;
   font-weight: bold;
   padding: 14px;
@@ -62,15 +60,71 @@ button.btn {
   border-radius: 12px;
   cursor: pointer;
   font-size: 16px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 6px rgba(147, 51, 234, 0.25);
   transition: all 0.2s ease;
 }
 
 button.btn:hover {
-  background-color: #b45309;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  background-color: #db2777;
+  box-shadow: 0 4px 10px rgba(219, 39, 119, 0.35);
 }
 
 button.btn:active {
   transform: scale(0.95);
+}
+@media (max-width: 1024px) {
+  .grid {
+    width: 65%;
+    padding: 40px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .grid {
+    width: 80%;
+    margin: 60px auto 30px auto;
+    padding: 30px;
+    min-height: auto;
+  }
+  .heading h1 {
+    font-size: 1.6rem;
+    margin-bottom: 28px;
+  }
+  form {
+    gap: 22px;
+  }
+  input,
+  button.btn {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .grid {
+    width: 90%;
+    margin: 40px auto 20px auto;
+    padding: 22px 18px;
+    border-radius: 12px;
+  }
+  .heading h1 {
+    font-size: 1.35rem;
+    margin-bottom: 22px;
+  }
+  form {
+    gap: 18px;
+  }
+  label {
+    font-size: 0.88rem;
+  }
+  input {
+    padding: 11px;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+  button.btn {
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 10px;
+  }
 }
