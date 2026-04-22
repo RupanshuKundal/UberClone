@@ -19,7 +19,7 @@ const page = () => {
         </div>
 
         {/* Destination Input Group */}
-        <div className="flex flex-col mb-6">
+        <div className="flex flex-col mb-6"> 
           <label htmlFor="dest" className="text-sm font-semibold text-amber-900 mb-2 ml-1">
             Destination
           </label>
